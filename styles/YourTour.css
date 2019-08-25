@@ -1,0 +1,77 @@
+.yourtripentrance{
+    width: 110%;
+    height: 100vh;
+    background-size: cover;
+    left: -2%;
+}
+html { scroll-behavior: smooth; } 
+
+#Createform{
+    width: 110%;
+    height: 100vh;
+    background-size: cover;
+    left: -2%;
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+ 
+  
+  .btn {
+      font-family: 'Oswald', sans-serif;
+      display: block;
+      height: 60px;
+      padding: 5px 30px;
+      text-align: center;
+      text-decoration: none;
+      width: 300px;
+      font-size: 13px;
+      line-height: 4em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all .3s ease-in-out;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate3D(-50%, -50%, 0);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(15, 12, 12);
+  
+      &:before,
+      &:after {
+          width: 0%;
+          height: 2px;
+          position: absolute;
+          background: #e5c100;
+          transition: width .4s ease-in-out;
+          content: " ";
+      }
+  
+      &:before {
+          left: 0;
+          top: -2px;
+      }
+  
+      &:after {
+          bottom: -2px;
+          right: 0;
+      }
+  
+      &:hover {
+          padding: 5px 25px 5px 35px;
+          border-color: #e5c100;
+      color: lighten(#e5c100, 50%);
+  
+          &:before,
+          &:after {
+              width: 100%;
+          }
+      }
+  }
+
+  
