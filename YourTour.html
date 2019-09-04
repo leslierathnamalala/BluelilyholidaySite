@@ -14,12 +14,15 @@
 		<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 		<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 		<link rel="stylesheet" type="text/css" href="styles/responsive.css">
-		
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-		
-		
 		<link rel="stylesheet" href="styles/YourTour.css">
+
+
+		<link rel="stylesheet" type="text/css" href="styles/yourtourformopensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="styles/yourtourformstyle.css"/>
 		
 		</head>
 <body>
@@ -126,21 +129,217 @@
 	<div class="yourtripentrance" style="background-image: url('images/YourTour.jpg')">
 		
 		
-		<a href="#Createform" class="btn">Create YourTour</a>
+		<a href="#page-content" class="btn">Create YourTour</a>
 
 	</div>
 
-	<div id="Createform">
-			
 	
+		<div class="page-content" id="page-content">
+			<div class="form-v1-content">
+				<div class="wizard-form">
+					<form class="form-register" action="#" method="post">
+						<div id="form-total">
+							<!-- SECTION 1 -->
+							<h2>
+								<p class="step-icon"><span>01</span></p>
+								<span class="step-text">Peronal Infomation</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<div class="wizard-header">
+										<h3 class="heading">Peronal Infomation</h3>
+										<p>Please enter your personal infomation</p>
+									</div>
+									<div class="form-row">
+										<div class="form-holder">
+											<fieldset>
+												<legend>First Name</legend>
+												<input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name" required>
+											</fieldset>
+										</div>
+										<div class="form-holder">
+											<fieldset>
+												<legend>Last Name</legend>
+												<input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name" required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+											<div class="form-holder">
+												<fieldset>
+													<legend>Country</legend>
+													<input type="text" class="form-control" id="country" name="country" placeholder="Country" required>
+												</fieldset>
+											</div>
+											
+										</div>
+									<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<fieldset>
+												<legend>Your Email</legend>
+												<input type="text" name="your_email" id="your_email" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="example@email.com" required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<fieldset>
+												<legend>Phone Number</legend>
+												<input type="text" class="form-control" id="phone" name="phone" placeholder="+1 888-999-7777" required>
+											</fieldset>
+										</div>
+									</div>
+									
+								</div>
+							</section>
+
+							<!-- SECTION 1 -->
+							<h2>
+								<p class="step-icon"><span>02</span></p>
+								<span class="step-text">Tour Infomation</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<div class="wizard-header">
+										<h3 class="heading">Tour Infomation</h3>
+										<p>Please enter your information about your tour </p>
+									</div>
+									<div class="form-row">
+										<div class="form-holder">
+											<fieldset>
+												<legend>Arrival date</legend>
+												<input type="date" class="form-control" id="adate" name="first-name" placeholder="First Name" required>
+											</fieldset>
+										</div>
+										<div class="form-holder">
+											<fieldset>
+												<legend>Depature date</legend>
+												<input type="date" class="form-control" id="ddate" name="last-name" placeholder="Last Name" required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-holder">
+											<fieldset>
+												<legend>Number of adults</legend>
+												<input type="number" class="form-control" id="adnum" name="adnum" placeholder="number of adults" required>
+											</fieldset>
+										</div>
+										<div class="form-holder">
+											<fieldset>
+												<legend>Number of childrens</legend>
+												<input type="number" class="form-control" id="chnum" name="chnum" placeholder="number of childrens" required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<fieldset>
+												<legend>Type of accomadation</legend>
+												<select>
+													<option value="5 Star Hotel">5 Star Hotel</option>
+													<option value="4 Star Hotel">4 Star Hotel</option>
+													<option value="3 Star Hotel">3 Star Hotel</option>
+													<option value="Luxury Boutiques">Luxury Boutiques</option>
+													<option value="wallet frendly">wallet frendly</option>
+												  </select>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+											<div class="form-holder form-holder-2">
+												<fieldset>
+													<legend>Special Note</legend>
+													<textarea name="note" style="border: none">Describe your tour</textarea>
+												</fieldset>
+											</div>
+										</div>
+									
+								</div>
+							</section>
+							<!-- SECTION 3 -->
+							<h2>
+								<p class="step-icon"><span>03</span></p>
+								<span class="step-text">Communication Method</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<div class="wizard-header">
+										<h3 class="heading">Communication Method</h3>
+										<p> How did you hear about us?</p>
+									</div>
+									
+									<div class="form-row-total">
+										<div class="form-row">
+											<div class="form-holder form-holder-2 form-holder-3">
+												<input type="radio" class="radio" name="bank-1" id="bank-1" value="bank-1" checked>
+												<label class="bank-images label-above bank-1-label" for="bank-1">
+													<img src="images/form-v1-1.png" height="80%" alt="bank-1">
+												</label>
+												<input type="radio" class="radio" name="bank-2" id="bank-2" value="bank-2">
+												<label class="bank-images label-above bank-2-label" for="bank-2">
+													<img src="images/form-v1-2.png" height="80%" alt="bank-2">
+												</label>
+												<input type="radio" class="radio" name="bank-3" id="bank-3" value="bank-3">
+												<label class="bank-images label-above bank-3-label" for="bank-3">
+													<img src="images/form-v1-3.png" height="80%" alt="bank-3">
+												</label>
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-holder form-holder-2 form-holder-3">
+												<input type="radio" class="radio" name="bank-4" id="bank-4" value="bank-4">
+												<label class="bank-images bank-4-label" for="bank-4">
+													<img src="images/form-v1-4.png" height="80%" alt="bank-4">
+												</label>
+												<input type="radio" class="radio" name="bank-5" id="bank-5" value="bank-5">
+												<label class="bank-images bank-5-label" for="bank-5">
+													<img src="images/form-v1-5.png" height="80%" alt="bank-5">
+												</label>
+												<input type="radio" class="radio" name="bank-6" id="bank-6" value="bank-6">
+												<label class="bank-images bank-6-label" for="bank-6">
+													<img src="images/form-v1-6.png" height="80%" alt="bank-6">
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- SECTION 3 -->
+							<h2>
+								<p class="step-icon"><span>04</span></p>
+								<span class="step-text">Finish</span>
+							</h2>
+							<section>
+								<div class="inner">
+									<div class="wizard-header">
+										<h3 class="heading">Finish</h3>
+										<p>Now You are ready to go</p>
+										
+										<div class="form-row">
+												<div class="form-holder form-holder-2">
+														<input type="submit" class="btnsub" name="finish" onclick="window.location='index.html';" >
+												</div>
+											</div>
+									</div>
+									
+								</div>
+								
+							</section>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
-	
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
 
 	<!-- End of the gallery -->
 </div>
 
 
-<script src="js/jquery-3.2.1.min.js"></script>
+
 <script src="styles/bootstrap-4.1.3/popper.js"></script>
 <script src="styles/bootstrap-4.1.3/bootstrap.min.js"></script>
 <script src="plugins/greensock/TweenMax.min.js"></script>
